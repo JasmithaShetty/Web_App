@@ -22,7 +22,7 @@ def add_message_to_database(name, message):
     conn = get_db_connection()
     cursor = conn.cursor()
     
-    query = "INSERT INTO list (name, message, timestamp) VALUES (%s, %s, %s)"
+    query = "INSERT INTO table_name (name, message, timestamp) VALUES (%s, %s, %s)"
     cursor.execute(query, (name, message, timestamp))
     
     conn.commit()
