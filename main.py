@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 MAX_NAME_CHAR =20
-MAX_ADDRESS_CHAR =255
+MAX_ADDRESS_CHAR =40
 TIME_STAMP_FORMAT = "%Y-%m-%d %I:%M:%S %p GMT"
 
 app,rt = fast_app()
