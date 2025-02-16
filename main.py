@@ -33,7 +33,7 @@ def get_messages_from_database():
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
     
-    query = "SELECT * FROM list ORDER BY timestamp DESC"
+    query = "SELECT * FROM table__name ORDER BY timestamp DESC"
     cursor.execute(query)
     messages = cursor.fetchall()
     
@@ -88,7 +88,7 @@ def render_content():
         form,
         P("Website is here⤵️!!...."),
         Div(
-            "This is created with 🫶❤️ for 🎌 by Jasmitha🦋🤍 ",
+            "This is created with 🫶❤️ for 🎌 by Author🦋🤍 ",
             A("Tokyo🏯",href="https://www.japan.travel/en/destinations/kanto/tokyo/",target="blank"),
         ),
         Hr(),
