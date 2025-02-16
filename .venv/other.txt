@@ -1,0 +1,13 @@
+from fasthtml.common import *
+
+app,rt = fast_app()
+
+@rt('/change')
+def get():
+    return Titled("Heyy!",P("Nice to be Here!"),A("Home",href="/"))
+
+@rt('/')
+def get():
+    return Titled(Div(P('Hello Everyone!')),P(A("Link",href="/change")))
+
+serve()
